@@ -1,0 +1,1 @@
+        mask = cv.bitwise_not(temp)

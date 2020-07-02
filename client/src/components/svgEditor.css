@@ -1,0 +1,127 @@
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #444;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+    background-color: #ddd;
+}
+
+.svgEditor{
+    width: 100%;
+    display: flex;
+    height: 50vw;
+    max-height: 500px;
+    position: relative;
+    user-select: none;
+}
+
+.svgEditor .edit{
+    background-size: 120%;
+    background-image: url('https://i7.pngguru.com/preview/569/705/68/white-black-pattern-white-circle-background.jpg');
+    background-position: left bottom;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    left:0;
+}
+
+.svgEditor .preview{
+    width: 50%;
+    overflow: auto;
+    height: 100%;
+    position: absolute;
+    right:0;
+    background-image: url("/images/fabric.png");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.svgEditor .preview svg{
+    margin-left: 5%;
+    margin-top: 5%;
+    position: absolute;
+    z-index: 2;
+    cursor: default;
+}
+
+.svgEditor .preview svg g path{
+    cursor: context-menu;
+    stroke: black;
+
+}
+
+.preview-frame{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.svgEditor .buttons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+}
+.alert-container{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.svgEditor .buttons button{
+    margin: 3px;
+}
+
+.chips{
+    width: 100%;
+    position: absolute;
+    bottom: 0.5rem;
+    z-index: 10;
+    display: flex;
+    height: 25px;
+}
+
+.chip-half{
+    width: 50%;
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.chip-half div{
+    margin: auto;
+}
+
+.help{
+    z-index: 2;
+    background-color: 'black'
+}
+
+path{
+    cursor: pointer;
+}
+
+.fabric-color{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    mix-blend-mode: multiply;
+}
+
+@media only screen and (max-width: 500px){
+    .chip-half div{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

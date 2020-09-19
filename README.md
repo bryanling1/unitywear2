@@ -28,5 +28,3 @@ Additionally, the image of the logo is processed to meet common design requireme
 ## Next Steps
 - Add a CSV file reader for order forms. Can be used by coaches keeping track of orders from players with jersey numbers, last names, etc.
 - Customize colors for particular designs directly in the widget
-
-
